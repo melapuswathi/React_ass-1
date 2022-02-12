@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Lizard from './images/lizard.jpg'
+import './App.css'
+ export const  Ex=()=>{
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+       <>
+        <div className='background'>
+        <div className="card col-4" id='aboutLizard'>
+            <div className="card-header">
+            <img src={Lizard} className='img-thumbnail' alt="" />
+            </div>
+            <div className="card-body">
+                <h1>
+                    lizard
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quo ipsam, tenetur asperiores sit necessitatibus earum ducimus quidem ratione nam?</p>
+            </div>
+            <div className="card-footer">
+                <a href="">share</a> &nbsp;
+                <a href="">learn more</a>
+            </div>
+        </div>
+        </div>
+       </>
+        
+    )
 }
-
-export default App;
+// export default Ex;
